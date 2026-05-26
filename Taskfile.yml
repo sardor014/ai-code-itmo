@@ -1,0 +1,29 @@
+version: '3'
+
+tasks:
+  install:
+    desc: Install all dependencies and playwright browsers
+    cmds:
+      - pip install -r requirements.txt
+      - playwright install chromium
+
+  backend:
+    desc: Run the FastAPI backend server
+    cmds:
+      - uvicorn backend.main:app --reload --port 8000
+
+  frontend:
+    desc: Open the frontend in the browser
+    cmds:
+      - open frontend/index.html
+
+  test:
+    desc: Run all tests and generate Allure data
+    cmds:
+      - rm -rf allure-results
+      - export PYTHONPATH=$PYTHONPATH:. && pytest --alluredir=allure-results
+
+  report:
+    desc: Generate and serve the Allure report
+    cmds:
+      - allure serve allure-results
