@@ -256,3 +256,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 >>>>>>> origin/main
+*.db
+__pycache__/
