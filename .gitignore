@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -42,10 +57,34 @@ htmlcov/
 .nox/
 .coverage
 .coverage.*
+>>>>>>> origin/main
 .cache
 nosetests.xml
 coverage.xml
 *.cover
+<<<<<<< HEAD
+.pytest_cache/
+
+# Allure
+allure-results/
+allure-report/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment
+.env
+=======
 *.py.cover
 .hypothesis/
 .pytest_cache/
@@ -216,3 +255,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+>>>>>>> origin/main
